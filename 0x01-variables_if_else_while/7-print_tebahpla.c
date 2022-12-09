@@ -12,7 +12,7 @@ int main(void)
 	while (alphabet >= 'a')
 	{
 		putchar(alphabet);
-		alphabet++;
+		alphabet--;
 	}
 	putchar('\n');
 
