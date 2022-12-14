@@ -16,7 +16,7 @@ int main(void)
 	{
 		if (count == 50)
 		{
-			printf("%lu, ", j);
+			printf("%lu\n, ", j);
 		}
 		else
 		{
