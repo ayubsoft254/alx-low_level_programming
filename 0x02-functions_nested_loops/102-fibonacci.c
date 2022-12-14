@@ -18,6 +18,10 @@ int main(void)
 		{
 			printf("%lu, ", j);
 		}
+		else
+		{
+			printf("%lu, ", j);
+		}
 
 		k = j;
 		j += i;
