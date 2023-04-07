@@ -7,7 +7,7 @@
  */
 
 hash_table_t *hash_table_create(unsigned long int size)
- {
+{
 	hash_table_t *res = malloc(sizeof(*res));
 	hash_node_t **arr;
 	unsigned long int i = 0;
@@ -28,4 +28,4 @@ hash_table_t *hash_table_create(unsigned long int size)
 	res->size = size;
 	res->array = arr;
 	return (res);
-  }
+}

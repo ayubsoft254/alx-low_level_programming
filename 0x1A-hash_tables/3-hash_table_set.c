@@ -8,8 +8,7 @@
  * Return: 1 for success 0 for failure
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
-{
-	unsigned long int q;
+{	unsigned long int q;
 	hash_node_t *new, *tmp;
 
 	if (!ht || !key || !(*key))
@@ -26,9 +25,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		ht->array[q] = new;
 	}
 	else
-	{
-		
-		/* check for update */
+	{	/* check for update */
 		tmp = ht->array[q];
 		while (tmp && strcmp(tmp->key, new->key) != 0)
 			tmp = tmp->next;
@@ -45,6 +42,5 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		new->next = tmp;
 		ht->array[q] = new;
 	}
-
 	return (1);
 }

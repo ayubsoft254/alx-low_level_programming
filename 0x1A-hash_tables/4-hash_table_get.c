@@ -6,7 +6,6 @@
  * @key: key to retrieve
  * Return: value of key in ht or null
  */
- 
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	unsigned long int j;
